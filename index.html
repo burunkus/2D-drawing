@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>2D Drawing</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Bellefair|Cinzel|Open+Sans" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--header start -->
+	<header id="header" class="sticky">
+		<div class="project_name_container">
+			<h3>2D Drawing</h3>
+		</div>
+	</header>
+	<!-- header end -->
+	<!-- main start-->
+	<main class="main">
+		<div class="error_message">
+			<p class="message">Error! make sure you entered only numbers positive numbers</p>
+		</div>
+		<div class="container">
+			<div class="canvas_container">
+				<canvas class="canvas" id="drawing_canvas">
+
+				</canvas>
+			</div>
+			<div class="input_container">
+				<div class="inputs">
+					<div id="shape_1" class="point_selection shape_1">
+						<h2>Shape 1</h2>
+						<div class="coordinates">
+							<h3 class="x_coordinate">X</h3>
+							<h3>Y</h3>
+						</div>
+						<div class="point">
+							<p>Point 1</p>
+							<input type="text" name="x" class="card">
+							<input type="text" name="y" class="card">
+							<input type="button" name="btn_del_point" value="Remove" class="remove card">
+						</div>
+						<div class="point">
+							<p>Point 2</p>
+							<input type="text" name="x" class="card">
+							<input type="text" name="y" class="card">
+							<input type="button" name="btn_del_point" value="Remove" class="remove card">
+						</div>
+						<div class="point">
+							<p>Point 3</p>
+							<input type="text" name="x" class="card">
+							<input type="text" name="y" class="card">
+							<input type="button" name="btn_del_point" value="Remove" class="remove card">
+						</div>
+						<div class="new_point">
+							<button class="btn add_point">Add point</button>
+						</div>
+					</div>
+					<div id="shape_2" class="point_selection shape_2">
+						<h2>Shape 2</h2>
+						<div class="coordinates">
+							<h3 class="x_coordinate">X</h3>
+							<h3>Y</h3>
+						</div>
+						<div class="point">
+							<p>Point 1</p>
+							<input type="text" name="x" class="card">
+							<input type="text" name="y" class="card">
+							<input type="button" name="btn_del_point" value="Remove" class="remove card">
+						</div>
+						<div class="point">
+							<p>Point 2</p>
+							<input type="text" name="x" class="card">
+							<input type="text" name="y" class="card">
+							<input type="button" name="btn_del_point" value="Remove" class="remove card">
+						</div>
+						<div class="point">
+							<p>Point 3</p>
+							<input type="text" name="x" class="card">
+							<input type="text" name="y" class="card">
+							<input type="button" name="btn_del_point" value="Remove" class="remove card">
+						</div>
+						<div class="new_point">
+							<button class="btn add_point">Add point</button>
+						</div>
+					</div>
+				</div>
+				<div id="calculate" class="calculate">
+					<button class="btn calculate_btn">Calculate Distance </button>
+				</div>
+				<div class="other_messages">
+					<div class="other_messages_margin">
+						<p>Messages</p>
+						<div class="display_other_messages"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--main end-->
+	<!-- footer start-->
+	<footer class="footer_container">
+		<div class="footer">
+			<h5><span>Ebuka&William</span> Fall 2018 Software Verification & Validation Project</h5>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<script src="scripts/shapeDistanceProgram.js"></script>
+	<script src="scripts/globalValues.js"></script>
+	<script src="scripts/shape.js"></script>
+	<script src="scripts/message.js"></script>
+	<script src="scripts/index.js"></script>
+</body>
+</html>
